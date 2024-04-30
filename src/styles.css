@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  background-color: rgba(211, 208, 208, 0.244);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 75vw;
+  max-width: 600px;
+}
+
+.circle1 {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  position: relative;
+  border: 8px solid white;
+  box-shadow: 10px 10px 10px rgb(207, 203, 203);
+  background-color: rgb(50, 33, 126);
+}
+
+.circle2 {
+  height: 184px;
+  width: 184px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  /* display: flex;
+  justify-content: center; */
+  align-items: center;
+  border: 8px solid white;
+}
+
+.circle3 {
+  height: 184px;
+  width: 184px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 8px solid white; */
+  box-shadow: 10px 10px 10px rgb(207, 203, 203) inset;
+}
+
+:root {
+  --step0: 25px 25px 25px rgb(157, 95, 204);
+  --step1: 0px 25px 25px rgb(157, 95, 204);
+  --step2: -25px 25px 25px rgb(157, 95, 204);
+  --step3: -25px 0px 25px rgb(157, 95, 204);
+  --step4: -25px -25px 25px rgb(157, 95, 204);
+  --step5: 0px -25px 25px rgb(157, 95, 204);
+  --step6: 25px -25px 25px rgb(157, 95, 204);
+  --step7: 25px 0px 25px rgb(157, 95, 204);
+}
+
+@media (max-width: 670px) {
+  .button {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px
+  }
+}
